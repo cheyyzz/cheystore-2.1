@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="id" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>cheystore | Top Up Game Cepat & Aman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nv navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="brand navbar-brand" href="#beranda"><span class="brand-mark">C</span>chey<span>store</span></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#m" aria-label="Buka menu"><i
+                    class="bi bi-list fs-3"></i></button>
+            <div class="collapse navbar-collapse justify-content-end" id="m">
+                <ul class="navbar-nav gap-lg-1">
+                    <li><a class="nav-link" href="#beranda">Beranda</a></li>
+                    <li><a class="nav-link" href="#game">Top Up</a></li>
+                    <li><a class="nav-link" href="#promo">Promo</a></li>
+                    <li><a class="nav-link" href="#bantuan">Bantuan</a></li>
+                    <li><a class="nav-link" href="#pesanan">Pesanan <span class="cb" id="bd">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="view" id="v-beranda">
+            <header class="hero">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-7">
+                            <div class="hud mb-4"><b>●</b> Top up aktif 24/7</div>
+                            <h1>Level up sekarang.<br><span class="gd">Masuk rank lebih cepat.</span></h1>
+                            <p class="hero-copy text-secondary my-4">Diamond, UC, V-Poin, atau Genesis Crystal. Pilih
+                                game favorit, bayar, dan item masuk dalam hitungan menit.</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a class="bt" href="#game">Top up sekarang <i class="bi bi-arrow-right"></i></a>
+                                <a class="bt g" href="#promo">Lihat promo</a>
+                            </div>
+                            <div class="trust-row rv mt-5">
+                                <div><strong>Instant</strong><span>Proses otomatis</span></div>
+                                <div><strong>7 Hari</strong><span>Garansi transaksi</span></div>
+                                <div><strong>24/7</strong><span>Pusat bantuan</span></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="hero-art rv">
+                                <div class="art-orbit orbit-one"></div>
+                                <div class="art-orbit orbit-two"></div>
+                                <div class="hero-emblem"><i class="bi bi-controller"></i></div>
+                                <div class="float-card fc-one"><span>PROSES CEPAT</span><strong>&lt; 1 menit</strong>
+                                </div>
+                                <div class="float-card fc-two"><span>PENGIRIMAN</span><strong>OTOMATIS</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="mq">
+                <div><span>Mobile Legends</span><span>Free Fire</span><span>PUBG
+                        Mobile</span><span>Valorant</span><span>Genshin Impact</span><span>Honor of
+                        Kings</span><span>Call of Duty</span><span>Mobile Legends</span><span>Free Fire</span><span>PUBG
+                        Mobile</span><span>Valorant</span><span>Genshin Impact</span><span>Honor of
+                        Kings</span><span>Call of Duty</span></div>
+            </div>
+
+            <section class="sec">
+                <div class="container">
+                    <div class="sh rv">
+                        <div>
+                            <div class="hud mb-2">Pilihan player</div>
+                            <h2>Game <span class="gd">populer</span></h2>
+                        </div><a class="bt g" href="#game">Lihat semua</a>
+                    </div>
+                    <div class="row g-4" id="ft"></div>
+                </div>
+            </section>
+
+            <section class="sec pt-0">
+                <div class="container">
+                    <div class="gl promo-banner rv">
+                        <div class="row align-items-center g-4">
+                            <div class="col-lg-8">
+                                <div class="hud mb-2">Promo minggu ini</div>
+                                <h2>Cashback <span class="gd">sampai 20%</span></h2>
+                                <p class="text-secondary mb-0">Gunakan kode <b class="mn">LEVELUP</b> untuk transaksi
+                                    pilihan.</p>
+                            </div>
+                            <div class="col-lg-4 text-lg-end"><a class="bt" href="#promo">Ambil promo <i
+                                        class="bi bi-ticket-perforated"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="view" id="v-game">
+            <section class="pg">
+                <div class="container">
+                    <div class="simple-page-heading">
+                        <h1>Pilih Game</h1>
+                        <p>Masukkan User ID dengan benar sebelum melakukan top up.</p>
+                    </div>
+                    <div class="game-filter mb-4">
+                        <button class="fl on" data-f="all">Semua</button>
+                        <button class="fl" data-f="moba">MOBA</button>
+                        <button class="fl" data-f="battle">Battle Royale</button>
+                        <button class="fl" data-f="rpg">RPG</button>
+                        <button class="fl" data-f="fps">FPS</button>
+                    </div>
+                    <div class="row g-4" id="mg"></div>
+                </div>
+            </section>
+        </div>
+
+        <div class="view" id="v-promo">
+            <section class="pg">
+                <div class="container">
+                    <div class="hud mb-3"><b>●</b> Promo aktif</div>
+                    <h1>Lebih hemat,<br><span class="gd">lebih main.</span></h1>
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-6 rv">
+                            <div class="gl promo-card">
+                                <div class="promo-label">VOUCHER</div>
+                                <h3>Cashback 20%</h3>
+                                <p class="text-secondary">Untuk top up pertama dengan pembayaran QRIS.</p>
+                                <div class="coupon">LEVELUP <i class="bi bi-copy"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 rv">
+                            <div class="gl promo-card">
+                                <div class="promo-label">FLASH DEAL</div>
+                                <h3>Diamond Hemat</h3>
+                                <p class="text-secondary">Bonus diamond untuk nominal 514 ke atas.</p>
+                                <div class="coupon">ML514 <i class="bi bi-copy"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rv">
+                            <div class="cd promo-mini"><i class="bi bi-lightning-charge gd fs-2"></i>
+                                <h3 class="mt-3">Gratis biaya admin</h3>
+                                <p class="text-secondary mb-0">Untuk 100 transaksi berikutnya.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rv">
+                            <div class="cd promo-mini"><i class="bi bi-shield-check gd fs-2"></i>
+                                <h3 class="mt-3">Garansi masuk</h3>
+                                <p class="text-secondary mb-0">Butuh bantuan? Kami tangani cepat.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 rv">
+                            <div class="cd promo-mini"><i class="bi bi-clock gd fs-2"></i>
+                                <h3 class="mt-3">Buka 24 jam</h3>
+                                <p class="text-secondary mb-0">Top up kapan pun dibutuhkan.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="view" id="v-bantuan">
+            <section class="pg">
+                <div class="container">
+                    <div class="row g-5 align-items-start">
+                        <div class="col-lg-5">
+                            <div class="hud mb-3"><b>●</b> Pusat bantuan</div>
+                            <h1>Butuh <span class="gd">bantuan?</span></h1>
+                            <p class="text-secondary mt-4">Lihat jawaban cepat atau kirimkan pesan kepada tim cheystore.
+                            </p>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="faq-list">
+                                <details open>
+                                    <summary>Berapa lama item masuk?<i class="bi bi-plus"></i></summary>
+                                    <p>Biasanya 1–5 menit setelah pembayaran terkonfirmasi. Terkadang dapat memakan
+                                        waktu lebih lama saat server game ramai.</p>
+                                </details>
+                                <details>
+                                    <summary>Apakah data akun aman?<i class="bi bi-plus"></i></summary>
+                                    <p>Aman. Anda hanya perlu memasukkan User ID. Jangan pernah membagikan password atau
+                                        kode verifikasi.</p>
+                                </details>
+                                <details>
+                                    <summary>Bisa refund jika salah ID?<i class="bi bi-plus"></i></summary>
+                                    <p>Jika salah memasukkan ID dan item sudah dikirim ke akun tersebut, pesanan tidak
+                                        dapat dibatalkan. Pastikan data sudah benar.</p>
+                                </details>
+                                <details>
+                                    <summary>Pembayaran apa yang tersedia?<i class="bi bi-plus"></i></summary>
+                                    <p>QRIS, e-wallet, Virtual Account, transfer bank, dan minimarket.</p>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="view" id="v-pesanan">
+            <section class="pg">
+                <div class="container">
+                    <div class="hud mb-3"><b>●</b> Checkout</div>
+                    <h1 class="mb-5">Pesanan <span class="gd">Anda</span></h1>
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="gl p-3 p-md-4">
+                                <div class="table-responsive">
+                                    <table class="tb">
+                                        <thead>
+                                            <tr>
+                                                <th>Produk</th>
+                                                <th>Harga</th>
+                                                <th>Jumlah</th>
+                                                <th class="text-end">Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="cb"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="gl checkout-summary">
+                                <div class="hud mb-2">Ringkasan</div>
+                                <div class="dsp gd total" id="tt">Rp0</div>
+                                <label class="hud mt-4 mb-2" for="uid">User ID</label>
+                                <input class="form-control mb-2" id="uid" placeholder="Masukkan User ID">
+                                <label class="hud mb-2" for="server">Server / Zone ID</label>
+                                <input class="form-control mb-3" id="server" placeholder="Contoh: 1234">
+                                <a class="bt w-100 justify-content-center mt-2" id="wal" target="_blank"
+                                    rel="noopener"><i class="bi bi-whatsapp"></i> Bayar via WhatsApp</a>
+                                <button class="bt g w-100 justify-content-center mt-2" id="clr">Kosongkan
+                                    pesanan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="brand mb-3"><span class="brand-mark">C</span>chey<span>store</span></div>
+                    <p class="text-secondary">Top up game cepat, aman, dan transparan untuk semua pemain Indonesia.</p>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="hud mb-3">Layanan</div>Top Up Game<br>Membership<br>Voucher
+                </div>
+                <div class="col-6 col-lg-4">
+                    <div class="hud mb-3">Hubungi</div><i class="bi bi-whatsapp me-2"></i>+62 858-2312-0175<br><i
+                        class="bi bi-envelope me-2"></i>12410394@student.unklab.ac.id
+                </div>
+            </div>
+            <div class="wm">CHEYSTORE</div>
+            <div class="hud">© 2026 cheystore. Semua merek milik pemiliknya.</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
